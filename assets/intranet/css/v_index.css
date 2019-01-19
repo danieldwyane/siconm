@@ -1,0 +1,874 @@
+@charset "utf-8";
+
+/*
+        Indicamos la fuente
+*/
+@font-face{
+    font-family:roboto;
+    src:url('../fuentes/RobotoCondensed-Italic.ttf');
+}
+
+/* 
+   Estilo del html, body
+*/
+html, body{
+    margin:0px;
+    padding:0px;
+}
+
+/*
+   Estilo de los hypervinculos
+ 
+*/
+a:link{
+    border-color:none !important;
+    text-decoration:none !important;
+}
+
+a:visited{
+    border-color:none !important;
+    text-decoration:none !important;
+}
+
+a:hover{
+    border-color:none !important;
+    text-decoration:none !important;
+}
+
+a:active{
+    border-color:none !important;
+    text-decoration:none !important;
+}
+
+/*
+        Estilo de los tooltips
+*/
+.tooltip-inner/*, .tooltip-arrow*/{
+    background-color:rgba(27,41,55,1);
+}
+
+/*
+        Estilo de los elementos que contengan la clase .container-fluid
+*/
+.container-fluid{
+    margin:0px !important;
+    padding:0px !important
+}
+
+/*
+        Capa que sirve como deslizador del contenido de la intranet
+*/
+body > div:nth-child(2){
+    /*border:1px solid red;*/
+    overflow:hidden;
+    position:absolute;
+}
+
+/*
+    Div que contiene el cintillo
+*/
+#capa_cintillo{
+    /*border:1px solid blue;*/
+    height:50px;
+    width:100%;
+}
+
+/*
+    Div que contiene las capa de la imagen izquierda y derecha del cintillo
+*/
+#capa_cintillo > div{
+    /*border:1px solid blue;*/
+    height:100% !important;
+}
+
+/*
+    Div que contiene la capa del la imagen izquierda del cintillo
+*/
+#capa_cintillo > div:nth-child(1){
+    background-image:url(../images/gobierno_izquierda.png);
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-size:80% 60%;
+    margin-left:5px;
+    width:400px;	
+    float:left;
+}
+
+/*
+    Div que contiene la capa del la imagen derecha del cintillo
+*/
+#capa_cintillo > div:nth-child(2){
+    background-image:url(../images/gobierno_derecha.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:100% 88%;
+    float:right;
+    margin-right:5px;
+    width:140px;
+}
+
+/*
+        Capa que contiene todas las capas que conforman el formulario de autenticación
+*/
+#capa_autenticacion{
+    /*border:1px solid green;*/
+    float:left;
+}
+
+#capa_autenticacion > div:nth-child(1){
+    margin-top:50px;
+}
+
+/*
+        Mensaje iniciar sesión incluido el div del formulario
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(1){
+    /*border:1px solid green;*/
+    color:#555;
+    font-family: Arial;
+    font-size:18px;
+    padding-bottom:15px;
+    text-align:center;
+    margin-top:3.5%;
+}
+
+/*
+    Contiene toda la zona gris
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2){
+    //background-color: rgba(247,247,247,1);
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 2px 3px 0px rgba(125, 17, 13, 1);
+    /*box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.4);*/
+    height:auto !important;
+    margin:auto !important;
+    width:360px;
+    /*border-top:5px solid darkred;*/
+    border-bottom:5px solid darkred;
+    /*border:1px solid pink;*/
+}
+
+/*
+        Primer Div de la imagen
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+    /*border:1px solid blue;*/
+    height:160px;
+    padding-top:50px !important;
+    text-align:center;
+    width:100%;
+}
+
+/*
+    Div de la imagen flecha
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+    /*border:2px solid red;*/
+    margin-left:40px;
+    /*position: absolute !important;*/
+    float: left;
+    margin-top: 0px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.5);
+    transition: color 0.6s ease;
+    display: none;
+}
+
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1):hover{
+    cursor:pointer;
+    color: rgba(0,0,0,0.7);
+}
+
+/*
+    Segundo Div de la imagen
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+    background-color:rgba(225,225,225,1);
+    background-image:url(../images/usuario_logo_0.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:110% 102%;
+    border:1px solid rgba(0,0,0,0);
+    border-radius:70px;
+    height:105px;
+    margin:auto !important;
+    transition:all 0.4s ease;
+    width:105px;
+}
+
+/*
+        Para acceder a elementos de la tabla
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) form{
+    /*border:1px solid red;*/
+}
+
+/*
+        Para acceder a la tabla
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) form table{
+    /*border:1px solid red;*/
+    width: 100%;
+    margin:auto !important;
+}
+
+/*
+        Para acceder a todos los td de la tabla
+*/
+#capa_autenticacion > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) form table tr td{
+    /*border:1px solid green;*/
+}
+
+/*
+        Div que especifica la zona visual para mostrar el nombre el usuario
+*/
+#capa_autenticacion form table tr:nth-child(1) td div{
+    /*border:1px solid red;*/
+    line-height:50px;
+    margin: auto;
+    min-height:20px;
+    overflow:hidden;
+    text-align:center;
+    width:280px;
+}
+
+/*
+        Div que especifica la zona visual de los campos de usuario y contraseña
+*/
+#capa_autenticacion form table tr:nth-child(2) td div{
+    /*border:1px solid red;*/
+    overflow:hidden;
+    width:280px;
+    margin: auto;
+}
+
+#capa_autenticacion form table tr:nth-child(2) td div div{
+    /*border:1px solid blue;*/
+    width:900px;
+}
+
+/*
+        Para acceder al elemento input text de la tabla
+*/
+#capa_autenticacion input[type=email],
+#capa_autenticacion input[type=password]{
+    display:block;
+    float:left;
+    height:35px;
+    /*height:45px;*/
+    margin-right:50px;
+    text-align:left;
+    padding:6px 12px;
+    /*text-align:center;*/
+    width:280px;
+}
+
+#capa_autenticacion input[type=email]:disabled,
+#capa_autenticacion input[type=password]:disabled{
+    background-color:rgba(255,255,255,0.8);
+    border:1px solid rgba(0,0,0,0.2);
+    color:rgba(0,0,0,0.5);
+}
+
+#capa_autenticacion input[type=email]:focus,
+#capa_autenticacion input[type=password]:focus{
+    border:1px solid rgba(8,58,129,0.5);
+}
+
+/*
+        Para acceder al segundo tr de la tabla
+*/
+#capa_autenticacion form table tr:nth-child(3) td div{
+    /*border:1px solid red;*/
+    min-height:10px;
+}
+
+
+/*
+        Para acceder al cuarto tr de la tabla, botones.
+*/
+#capa_autenticacion form table tr:nth-child(4) td div{
+    /*border:1px solid red;*/
+    overflow:hidden;
+    width:280px;
+    margin: auto;
+    padding-left:92px;//margen izquierdo boton siguiente
+}
+
+#capa_autenticacion form table tr:nth-child(4) td div div{
+    /*border:1px solid blue;*/
+    width:900px;
+}
+
+/*
+        Para acceder al elemento input button de la tabla
+*/
+#capa_autenticacion form table tr:nth-child(4) input:nth-child(1),
+#capa_autenticacion form table tr:nth-child(4) input:nth-child(2){
+    height:35px;
+    /*height:40px;*/
+    width:95px;
+    /*width:280px;*/
+    box-sizing: border-box;
+    display:block;
+    background-color:rgba(191,69,69,1);
+    color:white;
+    border-radius:0px;
+    /*border-radius:3px;*/
+    border:none;
+    margin-right:236px;
+    /*margin-right:50px;*/
+    float:left;
+    text-align:center;
+}
+
+#capa_autenticacion form table tr:nth-child(4) input:nth-child(1):disabled,
+#capa_autenticacion form table tr:nth-child(4) input:nth-child(2):disabled{
+    background-color:rgba(191, 69, 69, 0.80);
+}
+
+/*
+        Para acceder al quinto tr de la tabla, afecta al primer td
+*/
+#capa_autenticacion form table tr:nth-child(5) td{
+    padding-bottom:50px;
+    padding-left:40px; //margen izquierdo link registrarse
+    /*padding-right:39px;*/
+    padding-top:2px;
+    /*text-align:right;*/
+    text-align:left; //posicion link registrarse
+}
+
+/*
+        Estilo para la validación de los campos del formulario de autenticación
+*/
+.campo_error{
+    border:1px solid rgba(255,0,0,0.6) !important;
+}
+
+/*
+        Estilo para la capa que contiene los elementos de la intranet
+*/
+#capa_intranet{
+    /*border:1px solid blue;*/
+    display:none;
+    float:left;
+}
+
+/*
+        Estilo de la capa que contiene el menú izquierdo
+*/
+#menu_izquierda{
+    background-color:#942f2d;
+    /*overflow-y: auto;
+    overflow-x:hidden;*/
+    height:100%;
+    float:left;
+    position:absolute !important;
+    width:230px;
+    color: #FFF;
+}
+
+#menu_izquierda .titulo_menu{
+    /*border:1px solid white;*/
+    height: auto !important;
+    margin-top:10px;
+    max-height:70px;
+    min-height:42px !important;
+    position:absolute;
+    width:100%;
+}
+
+#menu_izquierda .titulo_menu > div{
+    float:left !important;
+}
+
+#menu_izquierda .titulo_menu > div:nth-child(1){
+    /*border:1px solid red;*/
+    color:rgba(255,255,255,1);
+    font-family:roboto;
+    font-size:27px;
+    line-height:36px;
+    margin-left:2px;
+    max-width:230px;
+    min-height:40px;
+    text-indent:5px;
+    word-wrap: break-word;
+    width:auto !important;
+}
+
+#menu_izquierda .usuario{
+    /*border:1px solid red;*/
+    height:60px;
+    margin-top:10px;
+    width:100%;
+}
+
+#menu_izquierda .usuario > div{
+    /*border:1px solid white;*/
+    float:left;
+}
+
+#menu_izquierda .usuario > div:nth-child(1){
+    background-image:url(../images/user_default.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    border:5px solid white;
+    border-radius:8px;
+    height:55px;
+    margin-left:10px;
+    width:55px;
+}
+
+#menu_izquierda .usuario > div:nth-child(1):hover{
+    cursor:pointer;
+}
+
+#menu_izquierda .usuario > .capa_nomb_usuario{
+    height:55px;
+    margin-left:5px;
+    width:140px;
+}
+
+#menu_izquierda .usuario > .capa_nomb_usuario > div{
+    height:49%;
+}
+
+#menu_izquierda .usuario > .capa_nomb_usuario > div:nth-child(1){
+    color:rgba(255,255,255,0.6);
+    line-height:200%;
+}
+
+#menu_izquierda .usuario > .capa_nomb_usuario > div:nth-child(2){
+    color:rgba(255,255,255,1);
+    line-height:170%;
+}
+
+.popover{
+    /*background-color:rgb(26,187,156) !important;*/
+}
+
+/*
+        Estilo del los items del menú
+*/
+.capa_items_menus{
+    overflow: auto;
+    /*max-height:100px;*/
+    width:242px;
+}
+
+.vertical-track {
+    width:6px;           
+    background-color:rgba(42, 63, 84, 0.7)/*rgba(42,63,84,0.5)*/; 
+}
+.vertical-handle {
+    width:6px;            
+    background-color:#a74240; 
+}
+
+#menu_izquierda #menu{
+    list-style:none !important;
+    margin-top:80px;
+    padding:0px;
+}
+
+#menu_izquierda #menu > li{
+    /*border:1px solid red !important;*/
+    border-right:5px solid rgba(26,187,156,0);
+    color:rgba(255,255,255,1);
+    min-height:45px;
+    line-height:40px;
+    overflow:hidden;
+    padding:0px;
+}
+
+#menu_izquierda #menu > li > div{
+    border-bottom:1px solid rgba(0,0,0,0);
+    border-top:1px solid rgba(255,255,255,0);
+    margin-bottom:3px;
+}
+
+#menu_izquierda #menu li:hover{
+    cursor:pointer;
+}
+
+#menu_izquierda #menu li span:nth-child(1){
+    margin-left:10px;
+}
+
+#menu_izquierda #menu li span:nth-child(2){
+    margin-left:5px;
+}
+
+#menu_izquierda #menu li span:nth-child(3){
+    /*border:1px solid red;*/
+    color:rgba(255,255,255,0.6);
+    float:right;
+    font-size:12px;
+    line-height:40px;
+    margin-right:20px !important;
+}
+
+#menu_izquierda #menu li .fa{
+    /*border:1px solid red;*/
+    font-size:18px;
+}
+
+#menu_izquierda #menu li .icono_modulo{
+    text-align:center;
+    width:20px;
+}
+
+/*
+        Estilo de los items del menú del segundo nivel
+*/
+#menu_izquierda #menu li ul{
+    /*border:1px solid white !important;*/
+    display:none;
+    height:0px;
+    margin-top:0px;
+    padding-left:0px;
+}
+
+#menu_izquierda #menu li ul li{
+    color:rgba(255,255,255,0.6);
+    display: block;
+    /*list-style:none;*/
+    /*padding-left:17px;*/
+    padding-left: 36px;
+    position: relative;
+}
+
+#menu_izquierda #menu li ul li:before
+{
+    background:#425668 none repeat scroll 0 0;
+    border-radius:50%;
+    content: " ";
+    font-size: 17px;
+    height:8px;
+    left: 15px;
+    margin-top: 16px;
+    position: absolute;
+    width:8px;
+}
+
+#menu_izquierda #menu li ul li:after {
+    border-left: 1px solid #425668;
+    bottom: 0;
+    content: "";
+    left: 19px;
+    position: absolute;
+    top: 0;
+}
+
+#menu_izquierda #menu li ul li:hover{
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+#menu_izquierda #menu li ul li.menu_activo{
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/*
+        Estilo de la animación de los menús
+*/
+#menu_izquierda #menu > li.alerta{
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-name: efecto_menu;
+}
+
+@keyframes efecto_menu{
+
+    0%   {background-color: #a74240;}
+    50%  {background-color: #942f2d;}
+    100% {background-color: #a74240;}
+}
+
+
+/*
+        Estilo de la capa que contiene el menú izquierdo minimizado
+*/
+.menu_izquierda_min{
+    width:70px !important;
+}
+
+.menu_izquierda_min .nombre_sistema,
+.menu_izquierda_min .usuario{
+    display:none !important;
+}
+
+.menu_izquierda_min .capa_items_menus{
+    margin-top:60px !important;
+}
+
+.menu_izquierda_min .menu > li div{
+    margin-top:60px !important;
+}
+
+/*
+        Estilo del footer del menú
+*/
+/*#menu_izquierda #footer_menu{
+        background-color:rgba(0,0,0,0.35);
+        bottom:0 !important;
+        height:40px;
+        position:absolute;
+    width:230px;
+}
+*/
+/*
+        Estilo de la capa que contiene el menú arriba
+*/
+#menu_arriba{
+    background-color:rgba(0, 0, 0, 0.04);
+    /*border:1px solid red !important;*/
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    float:left;
+    height:60px;
+    line-height:65px;
+    margin-left:230px !important;
+    /*margin-top:10px !important;*/
+}
+
+#menu_arriba > div{
+    /*border:1px solid red;*/
+    height:99.5% !important;
+    width:auto !important;
+}
+
+#menu_arriba > div:nth-child(1){
+    float:left !important;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#menu_arriba > div:nth-child(2),
+#menu_arriba > div:nth-child(3){
+    float:right !important;
+    padding-left:15px;
+    padding-right:15px !important;
+}
+
+#menu_arriba > div:nth-child(2):hover,
+#menu_arriba > div:nth-child(3):hover{
+    background-color:rgba(217,222,228,1);
+    cursor:pointer;
+}
+
+#menu_arriba > div:nth-child(1) .fa-bars{
+    border:1px solid red;
+    display:none;
+}
+/*
+#menu_arriba > div:nth-child(1) .fa-bars,
+#menu_arriba > div:nth-child(1) .fa-undo{
+    border:1px solid;
+    color:rgba(35,82,124,0.75);
+    font-size:26px;
+    margin-right:10px;
+    transition:color 0.2s ease-in;
+}
+
+#menu_arriba > div:nth-child(1) .fa-bars:hover,
+#menu_arriba > div:nth-child(1) .fa-undo:hover{
+    color:rgba(35,82,124,1);
+    cursor:pointer;
+}*/
+
+#menu_arriba > div:nth-child(1) .fa-bars,
+#menu_arriba > div:nth-child(1) .fa-arrow-circle-left{
+    /*border:1px solid;*/
+    color:rgba(35,82,124,0.75);
+    font-size:26px;
+    margin-right:10px;
+    transition:color 0.2s ease-in;
+}
+
+#menu_arriba > div:nth-child(1) .fa-bars:hover,
+#menu_arriba > div:nth-child(1) .fa-arrow-circle-left:hover{
+    color:rgba(35,82,124,1);
+    cursor:pointer;
+}
+
+/*
+        Estilo de la imagen del avatar del usuario en las opciones de cuenta de la intranet
+*/
+#menu_arriba > div:nth-child(2) .opcion_usuario img{
+    border-radius:20px;
+    height:35px !important;
+    margin-right:4px;
+    width:35px !important;
+}
+
+/*
+        Estilo del menú donde se despliega el cerrar sesión cuando
+        está abierto
+*/
+#menu_arriba > div:nth-child(2).open{
+    background-color:rgba(217,222,228,1);
+}
+
+#menu_arriba > div:nth-child(2).open .dropdown-menu{
+    background: #fff none repeat scroll 0 0 !important;
+    border: 1px solid #d9dee4 !important;
+    border-radius:0px !important;
+    left: auto !important;
+    margin-top: 0 !important;
+    padding:0px !important;
+    position: absolute !important;
+    right: 0 !important;
+    width: 220px !important;
+}
+
+#menu_arriba > div:nth-child(2).open .dropdown-menu li{
+    color:rgba(42,63,84,1);
+    height:40px;
+    line-height:40px !important;
+    padding-left:20px;
+    padding-right:10px;
+}
+
+#menu_arriba > div:nth-child(2).open .dropdown-menu li .fa{
+    float:right;
+}
+
+#menu_arriba > div:nth-child(2).open .dropdown-menu li:hover{
+    background-color:rgba(245,245,245,1);
+    color:rgba(0,0,0,1);
+    cursor:pointer;
+}
+
+/*
+        Icono de cerrar sesión
+*/
+#menu_arriba > div:nth-child(2).open .dropdown-menu li .fa-sign-out{
+    font-size:20px;
+    line-height:40px !important;
+}
+
+/*
+        Icono de opciones de cuenta
+*/
+#menu_arriba > div:nth-child(2).open .dropdown-menu li .fa-cogs{
+    font-size:20px;
+    line-height:40px !important;
+}
+
+#menu_arriba > div:nth-child(3) .fa-envelope-o{
+    font-size:18px !important;
+}
+
+#menu_arriba > div:nth-child(3){
+    /*border:1px solid red;*/
+    width:60px !important;
+}
+
+#menu_arriba > div:nth-child(3) #num_mensaje{
+    background-color:rgba(26,187,156,1);
+    /*border:1px solid red;*/
+    border-radius:50px;
+    color:rgba(255,255,255,1);
+    font-size:11px;
+    /*font-weight:bold;*/
+    height:20px !important;
+    line-height:normal !important;
+    /*min-height:15px !important;
+    min-width:15px !important;*/
+    margin-left:-6px;
+    margin-top:11px;
+    padding-top:3px;
+    position:absolute;
+    text-align:center;
+    width:20px !important;
+}
+
+#menu_arriba > div:nth-child(3) .fa.fa-bell{
+    font-size:18px;
+}
+
+
+#menu_arriba > div:nth-child(3) .notificacion_activa{
+    animation: hay_notificaciones 3s infinite;
+}
+
+/* The animation code */
+@keyframes hay_notificaciones{
+    0%   {color:rgba(0,0,0,1);}
+    25%  {color:rgb(201,48,44);}
+    50%  {color:rgba(0,0,0,1);}
+    75%  {color:rgb(201,48,44);}
+    100% {color:rgba(0,0,0,1);}
+}
+
+/*
+        Estilo de la capa que mostrará el contenido del menú
+*/
+#capa_contenido{
+    float:left;
+    margin-left:230px !important;
+}
+
+#capa_contenido iframe{
+    /*background-image:url(../images/fondo_marca_agua.png);*/
+    /*background-image:url(../images/miranda2.jpg);*/
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: 436px 424px;
+    border:none;
+    height:100%;
+    position:absolute;
+    width:100%;
+}
+
+.msj_error{
+    color:rgba(255,0,0,1); 
+    margin:auto;
+    padding-top:15px;
+    text-align:center;
+    width:280px;
+}
+
+/*
+        Estilo sobre los nuevos módulos
+*/
+.msj_nuevo{
+    background:rgba(26,187,156,1);
+    border-radius:3px;
+    color:#ffffff;
+    font-size:10px;
+    line-height:100%;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:2px;
+    margin-left:182px !important;
+    margin-top:-29px;
+    position:absolute;
+    width:auto;
+}
+
+/*
+        Estilo sobre los módulos pronto a ser lanzados
+*/
+.msj_pronto{
+    background:#b3751c;
+    border-radius:3px;
+    color:#ffffff;
+    font-size:10px;
+    line-height:100%;
+    padding-bottom:2px;
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:2px;
+    margin-left:182px !important;
+    margin-top:-29px;
+    position:absolute;
+    width:auto;
+}
+
+a {
+    color: rgba(191,69,69,1);
+    text-decoration: none;
+}

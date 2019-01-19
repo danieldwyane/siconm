@@ -1,0 +1,12 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2018-06-06 04:15:58 --> Severity: Notice --> Undefined property: Ctr_login::$usuarioss C:\xampp\htdocs\sica\application\controllers\Ctr_login.php 66
+ERROR - 2018-06-06 04:15:58 --> Severity: Notice --> Undefined property: Ctr_login::$usuarioss C:\xampp\htdocs\sica\application\controllers\Ctr_login.php 67
+ERROR - 2018-06-06 04:49:02 --> Severity: Warning --> include_once(assets/sica/registro/js/v_form_registrar_produccion.js): failed to open stream: No such file or directory C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6
+ERROR - 2018-06-06 04:49:02 --> Severity: Warning --> include_once(): Failed opening 'assets/sica/registro/js/v_form_registrar_produccion.js' for inclusion (include_path='.;C:\xampp\php\PEAR') C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6
+ERROR - 2018-06-06 04:49:43 --> Severity: Warning --> include_once(assets/sica/registro/js/v_form_registrar_produccion.js): failed to open stream: No such file or directory C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6
+ERROR - 2018-06-06 04:49:43 --> Severity: Warning --> include_once(): Failed opening 'assets/sica/registro/js/v_form_registrar_produccion.js' for inclusion (include_path='.;C:\xampp\php\PEAR') C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6
+ERROR - 2018-06-06 04:51:50 --> Severity: Warning --> include_once(assets/sica/registro/js/v_form_registrar_produccion.js): failed to open stream: No such file or directory C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6
+ERROR - 2018-06-06 04:51:50 --> Severity: Warning --> include_once(): Failed opening 'assets/sica/registro/js/v_form_registrar_produccion.js' for inclusion (include_path='.;C:\xampp\php\PEAR') C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6
+ERROR - 2018-06-06 04:52:03 --> Severity: Warning --> include_once(assets/sica/registro/js/v_bandeja_registro.js): failed to open stream: No such file or directory C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6
+ERROR - 2018-06-06 04:52:03 --> Severity: Warning --> include_once(): Failed opening 'assets/sica/registro/js/v_bandeja_registro.js' for inclusion (include_path='.;C:\xampp\php\PEAR') C:\xampp\htdocs\sica\application\views\sica\registro\v_registrar_produccion.php 6

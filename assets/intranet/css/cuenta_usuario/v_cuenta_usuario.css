@@ -1,0 +1,140 @@
+/*
+	Estilo del Body y Html
+*/
+body,html{
+	background:none !important;
+}
+
+/*
+	Estilo de los items
+*/
+.item{
+	display:inline-block;
+	height:90px;
+	margin:0 auto;
+	padding:10px;
+	float:left !important;
+	text-align:center;
+	width:150px;
+}
+
+.item .icono{
+	/*border:1px solid blue  !important;*/
+	color:rgba(42,63,84,0.7);
+	font-size:40px;
+	margin-bottom:3px;
+}
+
+.item .nombre_sistema{
+	/*border:1px solid green  !important;*/
+	color:rgba(42,63,84,0.7);
+	font-weight:bold;
+}
+
+.item:hover .icono{
+/*        width: 300px;
+    height: 300px;*/
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotateY(360deg);
+    /*transform: rotate(160deg);*/
+    color:rgba(191,69,69,1);
+}
+
+.icono{
+    /*border:1px solid blue  !important;*/
+    color:rgba(42,63,84,0.7);
+    font-size:40px;
+    margin-bottom:3px;
+}	
+
+/*.item:hover{
+	cursor:pointer;
+}
+
+.item:hover .icono{
+	animation: icono_item 0.2s 2;
+    color:rgba(26,187,156,1);
+}*/
+
+/*
+	Animación sobre los iconos del sistemas
+*/
+@keyframes icono_item {
+    0%   {margin-left:0%;}
+    25%  {margin-left:-6%;}
+    50%  {margin-left:0%;}
+    75%  {margin-left:6%;}
+    100% {margin-left:0%;}
+}
+
+/*
+	Estilo de la modal
+*/
+.modal-content{
+	margin-top:10%;
+}
+
+#leyenda .modal-footer button{
+	background:rgb(26,187,156);
+	color:#ffffff;
+}
+
+#leyenda .modal-header b{
+	color:rgb(26,187,156);
+}
+
+/*
+	Estilo para el mensaje de la modal cambio clave
+*/
+#mensaje{
+	text-align:	center;
+    padding: 5px 5px 5px 1px;
+}
+
+
+/*
+	Estilo del .header_log
+*/
+.header_log{
+	/*border:1px solid;*/
+	font-weight:bold;
+	height:30px;
+	line-height:30px;
+}
+
+.dato_log{
+	/*border:1px solid;*/
+	height:30px;
+	line-height:30px;
+}
+
+.header_log.affix{
+	background-color:rgba(42,63,84,1) !important;
+	color:rgba(255,255,255,1);
+	top:121px !important;
+	width:97.7%;
+	z-index:9999;
+}
+
+.header_log.affix + .container-fluid {
+	padding-top: 30px;
+}
+
+/*
+	Estilo de los campos readonly
+*/
+input[readonly]{
+    background-color: rgba(255,255,255,1) !important;
+}
+
+input[disabled]{
+    background-color: rgba(237,237,237,1) !important;
+}
+
+/*
+	Estilo del icono de carga de la modal
+*/
+.modal-footer .fa-cog{
+	color:rgb(42,63,84);
+	font-size:22px;
+}

@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+.EstiloPie {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C0C0C0;
+    text-align:center;
+    font-weight:bold;
+}
+
+.Titulo {
+    /*font-family: Arial Black;*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*color: #0E56A0;*/
+    color: #004276;
+    font-size:16px;
+    font-weight:bold;
+}
+
+body {
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.session {
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:right;
+}
+
+div.error{
+    background-color:#FFBEBE;
+    /*color: red;*/
+    border-radius: 7px 7px 7px 7px;
+    font-weight: bold;
+    border: 1px solid red;
+    margin-bottom:5px;
+    padding:5px;
+    width:380px;
+    height: 36px;
+    vertical-align: central;
+}
+
+.error_auth {
+    border-radius: 7px 7px 7px 7px;
+    background-color: #FFBEBE;
+    border: 1px solid red;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 370px;
+}
+		
+div.bien{
+    background-color:#B4FFAF;
+    /*color: green;*/
+    border-radius: 7px 7px 7px 7px;
+    /*font-weight: bold;*/
+    border: 1px solid green;
+    margin-bottom:5px;
+    padding:5px;
+    width:400px;
+}
+.errortd{
+    background-color:#FFBEBE;
+    border: 1px solid red;
+    margin-bottom:5px;
+    /*padding:5px;
+    width:400px;*/
+}
+
+.subTitulos {
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.rechazado{
+    background-color:#FF8F8F;
+    border: 1px solid #FF1111;
+}
+
+.error a {
+    border: none;
+    text-decoration: none;
+}
+
+.error a:hover {
+    border: none;
+    text-decoration: none;
+}
+		
+a img {
+    border: none;
+    text-decoration: none;
+}
+
+a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+a:link {
+    border: none;
+    text-decoration: none;
+} 

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+
+/*
+	Estilo de la capa #calendario
+*/
+#calendario{
+	padding-bottom:50px;
+	//padding-left:15px;
+	//padding-right:15px;
+	padding-top:50px;
+        
+}
+
+#leyenda{
+    padding-top:10px;
+    padding-left:45px;
+}
+
+.icono_ofic{
+	//border:1px solid blue  !important;
+	color:rgba(26,187,156,1);
+}
+.icono_ofic_ext{
+	color:rgba(58,135,173,1);
+}
+

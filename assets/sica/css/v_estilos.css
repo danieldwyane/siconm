@@ -1,0 +1,332 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/03/2018, 07:58:35 PM
+    Author     : alexander.guilarte
+*/
+
+/*
+    Estilo del datatable
+*/
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    background: #0A2047;
+    color: #FFFFFF;
+    padding: 2px 6px;
+    border-collapse: separate;
+    border: 1px solid #000;
+}
+
+/*
+        Estilo de la capa que contiene el icono de carga
+*/
+.capa_descargar{
+    display:none;
+}
+
+/*
+        Estilo del icono de descarga del archivo
+*/
+.descargar{
+    color:#3277b3;
+    /*font-size:50px;*/
+    font-size:35px;
+    padding:0px;
+    transition:all 0.4s ease;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-name: efecto;
+}
+
+@keyframes efecto{
+
+    0%   {background-color: #cce6ff;}
+    50%  {background-color: #e6f2ff;}
+    100% {background-color: #cce6ff;}
+}
+
+.descargar:hover{
+    color: #275d8b; /*rgb(26,187,156);*/
+    cursor:pointer;
+}
+
+.capa_descargar .text-info{
+    font-weight:bold;
+    margin:0px;
+}
+
+/*
+    Estilos de la modal
+*/
+.modal-header {
+    border-bottom: 3px solid #f90;
+    /*border-color: #f90;*/
+    background: #0A2047; /*#942f2d;*/
+    color: #0A2047;
+}
+
+/*
+    Estilos de los titulos 
+    principales y de las modales
+*/
+.titulo_p{
+    color: #0A2047;
+}
+
+.titulo_m{
+    color: #fff;
+}
+
+/*
+    Estilo de las tablas
+*/
+
+.header_present{
+    border:0px solid;
+    font-weight:bold;
+    height:30px;
+    line-height:30px;
+    /*segundo*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    background: #942F2D; 
+    color: #FFF;
+}
+
+.header_present.affix + .container-fluid {
+    padding-top: 30px;
+}
+
+.dato_prod{
+    border:1px solid #fff;
+    height:31px !important;
+    line-height:31px !important;
+    border-top-width: 0 !important;
+    padding-bottom:3px;
+    padding-top:3px;
+    /*segundo*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+}
+
+.dato_prod .form-group{
+    margin-bottom:0px !important;
+}
+
+.mirarr{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    border: 1px solid red;
+}
+
+.login-box-body{
+    border-left: 2px solid #F5F5F5;
+    border-right: 2px solid #F5F5F5;
+    box-shadow: 6px 6px 0px #F5F5F5;
+}
+
+/*
+    Estilo del icono de carga
+*/
+.icono_carga{
+    color:rgb(42,63,84);
+    font-size:30px;
+}
+
+/*
+    Estilos de los iconos
+*/
+
+.fa-check-circle{
+    font-size: 150%;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+.fa-times-circle{    
+    font-size: 150%;
+    color: #942F2D;
+    cursor: pointer;
+}
+
+.fa-pencil-square-o{
+    font-size: 150%;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+.fa-plus-circle{
+    font-size: 150%;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+.fa-info{
+    font-size: 200%;
+    color: #0A2047;
+    cursor: pointer;
+}
+
+.fa-check-square{
+    font-size: 100%;
+    color: #FFF;
+}
+
+.fa-truck{
+    font-size: 100%;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+.fa-cog{
+    font-size: 150%;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+.fa-undo{
+    font-size: 155%;
+    color: #942F2D;
+    cursor: pointer;
+}
+
+.fa-check{
+    font-size: 155%;
+    color: #0A2047;
+    cursor: pointer;
+}
+
+.fa-exclamation-triangle,
+.fa-check-square{
+    font-size: 100%;
+    color: #9A3B39;
+}
+
+.fa-ban{
+    font-size: 155%;
+    color: #aaa99e;
+    cursor: pointer;
+}
+
+/*
+    Estilos de los botones de las modales
+*/
+
+.btn-azul{
+    border: 1px solid #fff;
+    background: #0d2959;
+    color: #fff;
+}
+
+.btn-azul:hover,
+.btn-azul:focus,
+.btn-azul:active{
+    color: #fff;
+    background-color: #0A2047;
+    border-color: #0A2047
+}
+
+/*
+    Botones de las modales
+*/
+
+.btn-azul-modal{
+    border: 1px solid #fff;
+    background: #3277b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-azul-modal:hover,
+.btn-azul-modal:focus,
+.btn-azul-modal:active{
+    color: #fff;
+    font-weight: bold;
+    background-color: #275d8b;
+    border-color: #3675e2;
+}
+
+.btn-amarillo-modal{
+    border: 1px solid #fff;
+    background: #ffb84d; /* #ff471a;*/
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-amarillo-modal:hover,
+.btn-amarillo-modal:focus,
+.btn-amarillo-modal:active{
+    color: #fff;
+    font-weight: bold;
+    background-color: #ffad33;
+    border-color: #ffad33;
+}
+
+.btn-verde-modal{
+    border: 1px solid #fff;
+    background: #00cc44;
+    color: #fff;
+}
+
+.btn-verde-modal:hover,
+.btn-verde-modal:focus,
+.btn-verde-modal:active{
+    color: #fff;
+    background-color: #00b33c;
+    border-color: #00b33c;
+}
+
+/*
+    Alert de las respuestas o mensaje
+*/
+
+.alert-cuadro{
+    border-color: #942f2d;
+    /*background-color: #f90 #dd4b39 !important;*/
+    color: #942f2d !important;
+}
+
+.alert-azul{
+    border-color: #4d85e6;
+    /*border: 3px solid #4d85e6;*/
+    /*background-color: #adebad !important;*/
+    text-align: center;
+    color: #000 !important;
+}
+
+.alert-rojo{
+    border-color: #ff0000;
+    /*border: 3px solid #ff0000;*/
+    /*background-color: #ff9999 !important;*/
+    text-align: center;
+    color: #000 !important;
+}
+
+#form_nuevo_registro{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.capa_iniciar_operativo,
+.capa_carga_masiva{
+    display: none;
+}
+
+#real,
+#retira,
+#faltan{
+	/*font-size:35px;*/
+        font-size:60px;
+
+}
+
+
+
+
+
+

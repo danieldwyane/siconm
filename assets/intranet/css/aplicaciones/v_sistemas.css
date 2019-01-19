@@ -1,0 +1,144 @@
+/*
+        Estilo del Body y Html
+*/
+body,html{
+    background:none !important;
+}
+
+/*
+        Capa padre de los sistemas asociados
+*/
+#sistemas{
+    /*border:1px solid orange  !important;*/
+    padding:5px;
+}
+
+.sistema{
+    /*border:1px solid red  !important;*/
+    cursor:pointer;
+    display:inline-block;
+    height:90px;
+    margin:0 auto;
+    padding:10px;
+    float:left !important;
+    text-align:center;
+    width:150px;
+}
+
+.pronto{
+    /*border:1px solid red  !important;*/
+    cursor:pointer;
+    display:inline-block;
+    height:90px;
+    margin:0 auto;
+    padding:10px;
+    float:left !important;
+    text-align:center;
+    width:150px;
+}
+
+.sistema:hover{
+    cursor:pointer;
+}
+
+.sistema:hover .icono{
+/*        width: 300px;
+    height: 300px;*/
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotateY(360deg);
+    /*transform: rotate(160deg);*/
+    color:rgba(191,69,69,1);
+}
+
+.icono{
+    /*border:1px solid blue  !important;*/
+    color:rgba(42,63,84,0.7);
+    font-size:40px;
+    margin-bottom:3px;
+}	
+
+/*
+        Animación sobre los iconos del sistemas
+*/
+@keyframes icono_sistema {
+    0%   {margin-left:0%;}
+    25%  {margin-left:-6%;}
+    50%  {margin-left:0%;}
+    75%  {margin-left:6%;}
+    100% {margin-left:0%;}
+}
+
+.icono_activo{
+    color:rgba(191,69,69,1) !important;
+}
+
+.nombre_sistema{
+    /*border:1px solid green  !important;*/
+    color:rgba(42,63,84,0.7);
+    font-weight:bold;
+}
+
+/*
+        Estilo sobre los nuevos sistemas
+*/
+.msj_nuevo{
+    background:rgba(26,187,156,1);
+    border-radius:3px;
+    color:#ffffff;
+    font-size:10px;
+    padding-bottom:1px;
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:1px;
+    margin-left:90px !important;
+    margin-top:-70px;
+    position:absolute;
+    width:auto;
+}
+
+.msj_nuevo{
+    animation: nuevo_sistema 1s 3;
+}
+
+/*
+        Estilo sobre los sistemas pronto a ser lanzados
+*/
+.msj_pronto{
+    background:#f0ad4e;
+    border-radius:3px;
+    color:#ffffff;
+    font-size:10px;
+    padding-bottom:1px;
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:1px;
+    margin-left:90px !important;
+    margin-top:-70px;
+    position:absolute;
+    width:auto;
+}
+
+/*
+        Animación sobre los iconos de los nuevos sistemas
+*/
+@keyframes nuevo_sistema{
+    0%   {background:rgba(26,187,156,1);}
+    50%  {background:rgba(26,187,156,0);}
+    100% {background:rgba(26,187,156,1);}
+}
+
+/*
+        Estilo de la modal
+*/
+.modal-content{
+    margin-top:10%;
+}
+
+#leyenda .modal-footer button{
+    background:rgb(26,187,156);
+    color:#ffffff;
+}
+
+#leyenda .modal-header b{
+    color:rgb(26,187,156);
+}

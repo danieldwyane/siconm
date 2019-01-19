@@ -1,0 +1,61 @@
+/*
+	Estilo del Body y Html
+*/
+body,html{
+	background:none !important;
+}
+
+/*
+    Estilo sobre el contenedor principal del formulario
+*/
+#contenedor{
+    padding-top: 10px;
+}
+
+/*
+    Estilo del icono de carga
+*/
+.icono_carga{
+    color:rgba(42,63,84,1);
+    font-size:25px;
+    vertical-align:middle;
+    visibility:hidden;
+}
+
+/*
+	Estilo sobre los mensajes
+*/
+.bg-warning, 
+.bg-success, 
+.bg-danger{
+	padding:5px;
+	padding-left:10px;
+}
+
+#sistemas_por_asociar .branch:hover,
+#sistemas_asociados .branch:hover{
+	cursor:pointer !important;
+}
+
+#sistemas_por_asociar .tree > li, 
+#sistemas_asociados .tree > li{
+	color:rgba(0,0,0,0.65) !important;
+}
+
+#sistemas_por_asociar .tree > li > i, 
+#sistemas_asociados .tree > li > i{
+	/*color:rgba(26,187,156,1) !important;*/
+        color:#942f2d !important;
+}
+
+
+#sistemas_por_asociar .tree > li > ul > li,
+#sistemas_asociados .tree > li > ul > li{
+	/*color:rgba(26,187,156,1) !important;*/
+        color:#942f2d !important;
+}
+
+#sistemas_por_asociar .tree > li > ul > li > ul > li, 
+#sistemas_asociados .tree > li > ul > li > ul > li{
+	color:rgba(0,0,0,0.65) !important;
+}

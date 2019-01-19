@@ -1,0 +1,100 @@
+/*
+	Estilo del Body y Html
+*/
+body,html{
+	background:none !important;
+	background-color:rgb(232,235,239) !important;
+	
+}
+/*
+.header_notifi{
+	/*border:1px solid red;*/
+	/*height:30px;
+	width:800px;
+	margin-left:100px;
+	/*background-color:rgba(42,63,84,1) !important;*/
+	/*color:rgba(255,255,255,1);	
+	 margin-top: 30px;
+	
+	
+}*/
+
+/*
+.titulo{
+	
+	color: rgba(42, 63, 84, 0.7);
+    font-weight: bold;		
+}
+
+
+.globo{
+    width: 1020px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFF;
+    position: relative;
+    color: rgba(49,46,46,1.00);
+	cursor:pointer;
+	text-align:left;
+    
+
+	
+}
+*/
+/*
+	Estilo de la capa .capa_contenido
+*/
+.capa_contenido{
+	padding-bottom:20px;
+	padding-top:20px;
+	
+}
+
+/*
+	Estilo de las notificaciones
+*/
+.notificacion{
+	/*border:1px solid red;*/
+	margin-bottom:10px;
+	display:none;
+}
+
+.notificacion .titulo{
+	color: rgba(42, 63, 84, 0.7);
+    font-weight: bold;	
+		
+}
+
+.notificacion .globo{
+	background-color: #FFF;
+	border-radius: 5px;
+	color: rgba(49,46,46,1.00);
+	cursor:pointer;
+	min-height:50px;
+	padding: 15px;
+	text-align:left;
+}
+
+.fecha_asunto{
+	margin-left:25px;
+}
+
+/*
+	Estilo del mensaje de error
+*/
+.bg-danger{
+	color:rgb(201,48,44);
+	font-weight:bold;
+	padding:15px;
+	text-align:center;
+}
+
+/*
+	Estilo del icono de carga
+*/
+.fa-cog{
+	color:rgb(42,63,84);
+	font-size:22px;
+	
+}
